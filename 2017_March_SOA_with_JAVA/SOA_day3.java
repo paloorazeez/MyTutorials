@@ -48,6 +48,24 @@ Spring Cloud Bus
 	3. broker ensures message delivery to client
 	4. clients receive message and refresh themselves
 	
+	@RefreshScope
+	
+	
+	
+ 1. Spring cloud config server
+ 2. Consul [ Registration and Discovery ]
+ 3. Microservices[ config server, consul]
+ 4. Service to service communication
+	Discoveryclient
+	FeignClient
+ 5. Ribbon - Loadbalancer
+ 6. Hystrix : Fallback
+ 7. Zuul: API gateway
+ 8. Spring cloud bus
+ 
+ 
+ Swagger: REST documentation tool
+	
 	
 	
 	
