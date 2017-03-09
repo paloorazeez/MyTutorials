@@ -76,6 +76,6 @@ WebSecurityConfigurerAdapter
 	docker tag secureduims:1.0 paloorazeez/secureduims:1.0
 	docker push paloorazeez/secureduims:1.0
 	docker run --net host  -p 8090:8090 paloorazeez/secureduims:1.0
-	
+	docker-machine ip
 	
 	
