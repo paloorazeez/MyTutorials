@@ -1,5 +1,6 @@
 package com.example.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,14 +23,13 @@ public class TollService {
 	
 	@RequestMapping(value="/tolls",method=RequestMethod.GET)
 	public List<TollUsage> findAll(){
-		/*List<TollUsage> list = new ArrayList<>();
+		List<TollUsage> list = new ArrayList<>();
 		list.add(new TollUsage("1", "Wayanad", "KL:12 AA 0000", "01:10"));
 		list.add(new TollUsage("2", "Calicut", "KL:12 AA 0000", "01:10"));
 		list.add(new TollUsage("3", "Kannur", "KL:12 AA 0000", "01:10"));
 		list.add(new TollUsage("4", "Trichur", "KL:12 AA 0000", "01:10"));
 		list.add(new TollUsage("5", "Alappi", "KL:12 AA 0000", "01:10"));
-		return list;*/
-		return tollRepository.findAll();
+		return list;
 	}
 	
 	@RequestMapping(value="/tolls/{id}", method=RequestMethod.GET)

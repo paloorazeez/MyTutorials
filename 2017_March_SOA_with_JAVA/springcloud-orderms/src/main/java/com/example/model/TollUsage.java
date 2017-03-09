@@ -3,10 +3,6 @@ package com.example.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
-import io.swagger.annotations.ApiModelProperty;
-
 @Document(collection="toll")
 public class TollUsage {
 
@@ -39,8 +35,6 @@ public class TollUsage {
 		this.id = id;
 	}
 
-	@JsonProperty(required=true)
-	@ApiModelProperty(notes="Name of the Station Id ",required=true)
 	public String getStationId() {
 		return stationId;
 	}
@@ -49,9 +43,6 @@ public class TollUsage {
 		this.stationId = stationId;
 	}
 
-
-	@JsonProperty(required=true)
-	@ApiModelProperty(notes="Vehicle Registration Number ",required=true)
 	public String getLicensePlate() {
 		return licensePlate;
 	}
@@ -60,9 +51,6 @@ public class TollUsage {
 		this.licensePlate = licensePlate;
 	}
 
-
-	@JsonProperty(required=true)
-	@ApiModelProperty(notes="Vehicle Entry Time in hours:minutes format ",required=true)
 	public String getTimeStamp() {
 		return timeStamp;
 	}

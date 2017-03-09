@@ -9,6 +9,3 @@ spring:
           uri: https://github.com/krishnamurthypradeep/springcloud-config
           search-paths:
           - 'station*'
-management:
-  security:
-    enabled: false
